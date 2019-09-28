@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/create', 'PostsController@create')->name('posts.create');
+Route::get('/edit/{post}', 'PostsController@edit')->name('posts.edit');
